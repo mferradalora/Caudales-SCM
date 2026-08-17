@@ -29,5 +29,5 @@ jobs:
           git config --global user.name "Bot Caudales"
           git config --global user.email "bot@ejemplo.com"
           git add registro_caudales_scm.csv
-          git commit -m "Actualización de caudales" || exit 0
+          git commit -m "Actualización de caudales SCM" || exit 0
           git push
