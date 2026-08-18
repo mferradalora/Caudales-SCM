@@ -2,7 +2,7 @@ name: Monitoreo de Caudales SCM
 
 on:
   schedule:
-    - cron: '0 * * * *' # Se ejecuta cada hora
+    - cron: '0 */2 * * *' # Se ejecuta cada 2 horas
   workflow_dispatch: # Permite ejecutarlo manualmente
 
 jobs:
