@@ -16,7 +16,7 @@ CANALES = [
     {"id": 39, "nombre": "CANAL LA PÓLVORA"}
 ]
 
-ARCHIVO_CSV = "registro_caudales_scm.csv"
+ARCHIVO_CSV = "caudales_scm.csv"
 
 # Token con fallback. Si defines SCM_BEARER_TOKEN en GitHub Secrets, tomará ese valor.
 TOKEN = os.getenv(
