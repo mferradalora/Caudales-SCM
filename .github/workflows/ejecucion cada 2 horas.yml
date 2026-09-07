@@ -2,32 +2,34 @@ name: Monitoreo de Caudales SCM
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Se ejecuta cada 2 horas
-  workflow_dispatch: # Permite ejecutarlo manualmente
+    - cron: '0 */2 * * *' # Se ejecuta cada 2 horas en UTC
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write # Requerido para hacer git push sin errores 403
+
     steps:
       - name: Clonar repositorio
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configurar Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       - name: Instalar librerías
-        run: pip install requests
+        run: pip install requests pandas tzdata
 
       - name: Ejecutar script
-        run: python "Caudales SCM Github.py"
+        run: python "caudales_scm.py"
 
       - name: Guardar cambios en el CSV
         run: |
-          git config --global user.name "Bot Caudales"
-          git config --global user.email "bot@ejemplo.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add registro_caudales_scm.csv
-          git commit -m "Actualización de caudales SCM" || exit 0
-          git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática de caudales SCM" && git push)
