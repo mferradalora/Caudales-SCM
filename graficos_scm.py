@@ -39,7 +39,7 @@ for canal in canales:
     plt.figure(figsize=(10, 4.5))
     plt.plot(
         df_canal['Fecha_Hora'],
-        df_canal['Caudal_Flow'],
+        df_canal['Caudal_Flow']/1000,
         marker='o',
         markersize=4,
         linestyle='-',
@@ -53,7 +53,7 @@ for canal in canales:
     plt.title(f'{canal}', fontsize=14, fontweight='bold', pad=12) 
     
     # 2. Eje Y con la nueva etiqueta
-    plt.ylabel('Caudal (l/s)', fontsize=10) 
+    plt.ylabel('Caudal (m³/s)', fontsize=10) 
     plt.xlabel('Fecha y Hora Reportada', fontsize=10)
     
     # 3. Formato del eje X (una etiqueta por día, en formato dd-mm-yyyy)
