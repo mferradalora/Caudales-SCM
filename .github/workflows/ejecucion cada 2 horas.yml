@@ -28,7 +28,7 @@ jobs:
         run: python "caudales_scm.py"
 
       - name: Generar gráficos y README
-        run: python "graficos.py"
+        run: python "graficos_scm.py"
 
       - name: Guardar cambios en el repositorio
         run: |
