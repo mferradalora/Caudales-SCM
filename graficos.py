@@ -1,5 +1,6 @@
 import os
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import pandas as pd
 
 # 1. Cargar el archivo CSV
@@ -46,11 +47,25 @@ for canal in canales:
         linewidth=1.8,
     )
 
-    plt.title(f'Caudal: {canal}', fontsize=14, fontweight='bold', pad=12)
+    # --- CAMBIOS EN TÍTULO Y EJES ---
+    
+    # 1. Título sin la palabra "Caudal:"
+    plt.title(f'{canal}', fontsize=14, fontweight='bold', pad=12) 
+    
+    # 2. Eje Y con la nueva etiqueta
+    plt.ylabel('Caudal (l/s)', fontsize=10) 
     plt.xlabel('Fecha y Hora Reportada', fontsize=10)
-    plt.ylabel('Caudal', fontsize=10)
+    
+    # 3. Formato del eje X (una etiqueta por día, en formato dd-mm-yyyy)
+    ax = plt.gca()
+    ax.xaxis.set_major_locator(mdates.DayLocator()) # Fuerza una etiqueta diaria
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%d-%m-%Y')) # Formato dd-mm-yyyy
+    
+    # Se aumenta ligeramente la rotación y se reduce el tamaño de letra para que los días no se superpongan
+    plt.xticks(rotation=45, ha='right', fontsize=9) 
+    # ---------------------------------
+
     plt.grid(True, linestyle='--', alpha=0.5)
-    plt.xticks(rotation=35, ha='right')
     plt.tight_layout()
 
     # Normalizar el nombre del archivo (quitar espacios o caracteres especiales)
