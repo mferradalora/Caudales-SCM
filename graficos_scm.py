@@ -27,7 +27,7 @@ os.makedirs(output_dir, exist_ok=True)
 readme_content = "# 📊 Monitoreo de Caudales SCM\n\n"
 readme_content += "Visualización de caudales reportados por la Sociedad de Canal del Maipo.\n\n"
 readme_content += (
-    "> *Los gráficos se actualizan automáticamente cada 2 horas.*\n\n---\n\n"
+    "> *Los gráficos se actualizan cada 2 horas.*\n\n---\n\n"
 )
 
 # 5. Generar un gráfico por cada Nombre_Canal
