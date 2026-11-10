@@ -38,6 +38,6 @@ jobs:
           if git diff-index --quiet HEAD --; then
             echo "No se detectaron cambios en caudales ni gráficos."
           else
-            git commit -m "chore(data): actualización automática caudales SCM [skip ci]"
+            git commit -m "Actualización automática de caudales SCM"
             git push
           fi
