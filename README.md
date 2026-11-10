@@ -24,6 +24,18 @@ Visualización de caudales reportados por la Sociedad de Canal del Maipo.
 
 ---
 
+## CANAL BATUCO
+
+![CANAL BATUCO](graficos/CANAL_BATUCO.png)
+
+---
+
+## CANAL COLINA
+
+![CANAL COLINA](graficos/CANAL_COLINA.png)
+
+---
+
 ## CANAL EYZAGUIRRE
 
 ![CANAL EYZAGUIRRE](graficos/CANAL_EYZAGUIRRE.png)
@@ -45,6 +57,30 @@ Visualización de caudales reportados por la Sociedad de Canal del Maipo.
 ## CANAL LAS PERDICES
 
 ![CANAL LAS PERDICES](graficos/CANAL_LAS_PERDICES.png)
+
+---
+
+## CANAL LO CASTRO
+
+![CANAL LO CASTRO](graficos/CANAL_LO_CASTRO.png)
+
+---
+
+## CANAL LO SOLAR
+
+![CANAL LO SOLAR](graficos/CANAL_LO_SOLAR.png)
+
+---
+
+## CANAL SAN FRANCISCO
+
+![CANAL SAN FRANCISCO](graficos/CANAL_SAN_FRANCISCO.png)
+
+---
+
+## PTAP CHAMISERO
+
+![PTAP CHAMISERO](graficos/PTAP_CHAMISERO.png)
 
 ---
 
