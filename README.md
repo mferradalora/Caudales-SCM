@@ -2,7 +2,7 @@
 
 Visualización de caudales reportados por la Sociedad de Canal del Maipo.
 
-> *Los gráficos se actualizan cada 2 horas.*
+> *Los gráficos se actualizan automáticamente mediante GitHub Actions.*
 
 ---
 
@@ -50,7 +50,7 @@ Visualización de caudales reportados por la Sociedad de Canal del Maipo.
 
 ## CANAL LA PÓLVORA
 
-![CANAL LA PÓLVORA](graficos/CANAL_LA_PÓLVORA.png)
+![CANAL LA PÓLVORA](graficos/CANAL_LA_POLVORA.png)
 
 ---
 
@@ -92,7 +92,7 @@ Visualización de caudales reportados por la Sociedad de Canal del Maipo.
 
 ## RÍO MAIPO
 
-![RÍO MAIPO](graficos/RÍO_MAIPO.png)
+![RÍO MAIPO](graficos/RIO_MAIPO.png)
 
 ---
 
