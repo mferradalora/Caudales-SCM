@@ -95,7 +95,7 @@ def generar_graficos_y_readme():
     with open(ARCHIVO_README, "w", encoding="utf-8") as f:
         f.write("# 📊 Monitoreo de Caudales SCM\n\n")
         f.write("Visualización de caudales reportados por la Sociedad de Canal del Maipo.\n\n")
-        f.write("> *Los gráficos se actualizan automáticamente mediante GitHub Actions.*\n\n---\n\n")
+        f.write("> *Los gráficos se actualizan automáticamente cada 2 horas.*\n\n---\n\n")
         
         for canal, ruta in canales_graficados:
             f.write(f"## {canal}\n\n")
