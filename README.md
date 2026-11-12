@@ -2,7 +2,7 @@
 
 Visualización de caudales reportados por la Sociedad de Canal del Maipo.
 
-> *Los gráficos se actualizan automáticamente mediante GitHub Actions.*
+> *Los gráficos se actualizan automáticamente cada 2 horas.*
 
 ---
 
